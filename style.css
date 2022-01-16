@@ -1,0 +1,1199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    position: relative;
+    margin: 0;
+    background: #1E252B;
+}
+
+/*Header*/
+.nav-bar {
+    display: none;
+    width: 15%;
+    height: auto;
+}
+.nav-bar img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+header, .firstPage, .secondPage, .thirdPage, footer {
+    padding: 2% 5% 0 5%;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+a, select, button, h1, p, h3 {
+    font-family: 'Poppins', serif;
+    text-decoration: none;
+}
+/*sideBarBlock*/
+.nav-bar:active {
+    width: 10%;
+    transition: all ease-in-out 0.3s;
+}
+.sideBarClose{
+    transform: translateX(300px);
+    transition: all 0.3s ease-in-out;
+}
+.sideBarOpen{
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+}
+.close:active{
+    width:10%;
+}
+.sideBarOpen .close img{
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+}
+.sideBarClose .close img {
+    transform: rotate(720deg);
+    transition: all 0.1s ease-in-out;
+}
+.sideBarBlock{
+    display: flex;
+    justify-content: space-evenly;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: fixed;
+    right: 0;
+    background: #283036;
+    height: 300px;
+    z-index: 3;
+    padding: 32px 20px 50px 50px;
+}
+.sideBarBlock a{
+    font-size: 16px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+.close{
+    width: 20%;
+    height: auto;
+}
+.close img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/**/
+.login, .menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    gap: 40px;
+}
+
+.login {
+    gap: 60px;
+}
+
+.arrow {
+    width: 100%;
+    height: auto;
+}
+
+.arrow img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 18px;
+}
+
+.logo {
+    max-width: 48px;
+    width: 100%;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.categories {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transform: rotate(0);
+    transition: all 0.5s ease-in-out;
+}
+/*Categories*/
+.categories:hover .arrow{
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+}
+.categories:hover .dropDownContent{
+    display: block;
+}
+.categories .arrow{
+    transform: rotate(0deg);
+    transition: all 0.5s ease-in-out;
+}
+.dropDownContent{
+    display: none;
+    top: 28px;
+    width: 100%;
+    left: -28px;
+    border-radius: 20px;
+    padding: 20px;
+    background: #283036;
+    position: absolute;
+}
+/**/
+.logoField {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoField a {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.menu a {
+    border-bottom: 1px solid transparent;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+    transition: all 0.3s ease-in-out;
+}
+
+.login a {
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.login a:hover {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.sign {
+    border-radius: 10px;
+    background-color: #FF6E30;
+    width: 50%;
+    height: auto;
+    transition: all 0.3s ease-in-out
+}
+
+.sign button {
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.sign:hover, .searching:hover {
+    outline: 2px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+.sign:active, .searching:active {
+    outline: 2px solid transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+/*First-Page*/
+.firstPage {
+    height: 556px;
+    background-image: url("images/firstPage/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.firstPage h1 {
+    font-weight: 500;
+    font-size: 46px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.firstPage h1 span {
+    color: #FF6E30;
+}
+
+.firstPage .tittle {
+    padding-top: 30px;
+}
+
+.firstPage p {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.linksLogos {
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.inputItem {
+    margin-top: 50px;
+    width: 400px;
+    background: #283036;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search {
+    width: 80%;
+    height: 100%;
+}
+
+.iconSearch {
+    margin-left: 15px;
+}
+
+.search input {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.38);
+    background: transparent;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    width: 80%;
+    height: 100%;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.searching {
+
+    margin: 5px 5px 5px 0;
+    border-radius: 10px;
+    background: #FF6E30;
+}
+
+.searching button {
+    color: white;
+    padding: 10px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+/*Second Page*/
+.secondPage {
+    margin-top: 7%;
+}
+
+.heroSecond {
+    margin-bottom: 60px;
+}
+
+.heroSecond h1 {
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.heroSecond p {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+
+}
+
+.card {
+    box-shadow: rgba(84, 69, 62, 0) 0 8px 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: rgba(255, 110, 48, 0.1) 0 8px 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.cards .card {
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 392px;
+    height: 250px;
+}
+
+.secondPage .tittle h3 {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+
+.secondPage .tittle p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card .description {
+    font-size: 16px;
+}
+
+.description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card .heroText {
+    display: flex;
+    gap: 30px;
+}
+
+.itemSelectArea {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemSelect {
+    display: flex;
+    gap: 10px;
+}
+
+.like, .addFolder {
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+}
+
+.addFolder img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.card .visit button {
+    font-size: 16px;
+    padding: 9px 35px 9px 35px;
+    background: transparent;
+    background: none;
+    outline: none;
+    border: none;
+}
+.logoApp{
+    width: 20%;
+    height: auto;
+}
+.logoApp img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*unactive card*/
+.unactive .visit {
+    border-radius: 8px;
+    outline: 2px solid rgba(255, 255, 255, 0.01);
+    transition: all 0.3s ease-in-out;
+}
+
+.unactive .visit:hover {
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.unactive .visit:active {
+    outline: 2px solid rgba(255, 255, 255, 0.01);
+    transition: all 0.1s ease-in-out;
+}
+
+.unactive .tittle h3 {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.unactive .visit {
+    border-radius: 8px;
+    background: transparent;
+}
+
+.unactive .visit button {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.unactive .description {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.unactive .tittle p {
+    color: rgba(255, 165, 55, 0.55);
+}
+
+.unactive .like, .active .like, .active .addFolder, .unactive .addFolder {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unactive .like {
+    background-image: url("images/secondPage/like-ico.svg");
+}
+
+.unactive .addFolder {
+    background-image: url("images/secondPage/folder-ico.svg");
+}
+
+/*active card*/
+.active .tittle h3 {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.active .addFolder {
+    background-image: url("images/secondPage/folder-ico-active.svg");
+}
+
+.cards .active {
+    background-image: url("images/secondPage/active-card.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.active .visit {
+    border-radius: 8px;
+    background: #FF6E30;
+    outline: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.active .visit:hover {
+    outline: 2px solid white;
+    transition: all 0.3s ease-in-out;
+}
+.active .visit:active {
+    outline: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.active .visit button {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.active .description {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.active .tittle p {
+    color: #FFA537;
+}
+
+.active .like {
+    background-image: url("images/secondPage/like-ico-acitve.svg");
+}
+
+.cards .active {
+    margin-top: -20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.loadMore {
+    border-radius: 8px;
+    margin: 100px auto;
+    width: 184px;
+    height: 64px;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.loadMore:hover {
+    background: rgba(255, 255, 255, 0.05);
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.loadMore button {
+    width: 100%;
+    height: 100%;
+    padding: 17px 38px 17px 38px;
+    background: transparent;
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FF6E30;
+}
+
+/*Partners*/
+.partners {
+    padding: 50px;
+    margin: 0 100px 0 100px;
+    background-image: url("images/secondPage/partners-background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+.partners h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 35px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.partnersLogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.partnersLogo div{
+    width: 30%;
+    height: auto;
+}
+.partnersLogo div img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*Third page*/
+.thirdPage {
+    margin-top: 100px;
+}
+
+.explore {
+    margin-top: 15%;
+    border-radius: 10px;
+    background-color: #FF6E30;
+    width: 50%;
+    height: auto;
+    transition: all 0.3s ease-in-out
+}
+
+.explore button {
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.explore:hover {
+    outline: 2px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+.explore:active {
+    outline: 2px solid transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+.thirdPage > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+/*Little cards*/
+.littleCard {
+    box-shadow: rgba(84, 69, 62, 0) 0 8px 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.littleCard:hover {
+    box-shadow: rgba(255, 110, 48, 0.1) 0 8px 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.littleCards {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 24px;
+}
+
+.littleCards .littleCard {
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 288px;
+    height: 250px;
+}
+
+.thirdPage .tittle h3 {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+
+.thirdPage .tittle p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+
+.littleCard .description {
+    font-size: 16px;
+}
+
+.description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.littleCard .heroText {
+    display: flex;
+    gap: 30px;
+}
+
+.itemSelectArea {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemSelect {
+    display: flex;
+    gap: 10px;
+}
+
+.like, .addFolder {
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+}
+
+.addFolder img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.littleCard .visit button {
+    font-size: 16px;
+    padding: 9px 35px 9px 35px;
+    background: transparent;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+/*unactive card*/
+.unactive .visit {
+    border-radius: 8px;
+    outline: 2px solid rgba(255, 255, 255, 0.01);
+    transition: all 0.3s ease-in-out;
+}
+
+.unactive .visit:hover {
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.unactive .visit:active {
+    outline: 2px solid rgba(255, 255, 255, 0.01);
+    transition: all 0.1s ease-in-out;
+}
+
+.unactive .tittle h3 {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.unactive .visit {
+    border-radius: 8px;
+    background: transparent;
+}
+
+.unactive .visit button {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.unactive .description {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.unactive .tittle p {
+    color: rgba(255, 165, 55, 0.55);
+}
+
+.unactive .like, .active .like, .active .addFolder, .unactive .addFolder {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.unactive .like {
+    background-image: url("images/secondPage/like-ico.svg");
+}
+
+.unactive .addFolder {
+    background-image: url("images/secondPage/folder-ico.svg");
+}
+
+/*active card*/
+.active .tittle h3 {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.active .addFolder {
+    background-image: url("images/secondPage/folder-ico-active.svg");
+}
+
+.littleCards .active {
+    background-image: url("images/secondPage/active-card.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.active .visit {
+    border-radius: 8px;
+    background: #FF6E30;
+    outline: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.active .visit button {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.active .description {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.active .tittle p {
+    color: #FFA537;
+}
+
+.active .like {
+    background-image: url("images/secondPage/like-ico-acitve.svg");
+}
+
+.littleCards .active {
+    margin-top: -20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tools h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tools p {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/*Fourth Page*/
+.fourthPage {
+    margin-top: 5%;
+    padding: 0 5% 0 5%;
+}
+
+.about-hero {
+    background-image: url("images/thirdPage/text-background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 50px 0 50px 50px;
+}
+
+.about-hero p {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.heroes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.man {
+    width: 30%;
+    height: auto;
+}
+
+.man img {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.position {
+    margin: 40px auto;
+    width: 10%;
+    height: 10%;
+}
+
+.position img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*LastPage*/
+.lastPage {
+    margin-top: 250px;
+}
+
+.lastPage h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.lastPage p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.lastPage .inputItem {
+    margin: 100px auto;
+    width: 470px;
+}
+
+/*Footer*/
+footer {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .logoField p {
+    font-weight: 600;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.copyright h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.copyright p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+footer .information h1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer .information a, p {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+@media only screen and (max-width: 1024px) {
+    footer .logoField p {
+        font-size: 18px;
+    }
+
+    .copyright h3 {
+        font-size: 12px;
+    }
+
+    .copyright p {
+        font-size: 10px;
+    }
+
+    footer .information h1 {
+        font-size: 16px;
+    }
+
+    footer .information a, p {
+        font-size: 12px;
+    }
+    .menu {
+        display: none;
+    }
+    .nav-bar{
+        display: block;
+    }
+    .cards .card {
+        border-radius: 15px;
+        margin-bottom: 30px;
+        padding: 30px;
+        width: 292px;
+        height: 210px;
+    }
+    .secondPage .tittle h3,    .thirdPage .tittle h3 {
+        font-size: 18px;
+    }
+    .firstPage h1 {
+        font-size: 36px;
+    }
+    .firstPage p {
+        font-size: 12px;
+    }
+    .login a {
+        font-size: 16px;
+    }
+    .sign button {
+        font-size: 14px;
+    }
+    .about-hero p {
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 0.015em;
+    }
+    footer .information a, p {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 875px) {
+    .lastPage h1 {
+        font-size: 36px;
+    }
+    .loadMore {
+        margin: 25px auto;
+    }
+    .lastPage p {
+        font-size: 14px;
+    }
+    .position {
+        margin: 10px auto;
+        width: 10%;
+        height: 10%;
+    }
+    .about-hero {
+        padding: 50px 0 10px 50px;
+    }
+    .lastPage {
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-width: 736px) {
+    .littleCards .littleCard {
+        border-radius: 15px;
+        margin-bottom: 30px;
+        padding: 30px;
+        width: 208px;
+        height: 200px;
+    }
+    .about-hero p {
+        font-size: 8px;
+        line-height: 15px;
+        letter-spacing: 0.010em;
+    }
+    .login {
+        gap: 30px;
+    }
+}
+@media only screen and (max-width: 736px){
+    footer .logoField p {
+        font-size: 14px;
+    }
+
+    .copyright h3 {
+        font-size: 8px;
+    }
+
+    .copyright p {
+        font-size: 6px;
+    }
+
+    footer .information h1 {
+        font-size: 12px;
+    }
+
+    footer .information a,     footer .information p {
+        font-size: 8px;
+    }
+    .lastPage .inputItem {
+        margin: 100px auto;
+        width: 370px;
+    }
+    .search {
+        width: 75%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .loadMore button {
+        width: 100%;
+        height: 100%;
+        padding: 13px 34px 13px 34px;
+    }
+    .like, .addFolder {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+    .login {
+        gap: 15px;
+    }
+    .login a {
+        font-size: 12px;
+    }
+    .sign {
+        width: 40%;
+    }
+    .firstPage {
+        height: 406px;
+    }
+    .lastPage p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .logo {
+        width: 20%;
+    }
+    .heroSecond h1 {
+        font-size: 32px;
+    }
+    .heroSecond p {
+        font-size: 14px;
+    }
+    .littleCards {
+        grid-template-columns: auto;
+    }
+    .partners h1 {
+        font-size: 16px;
+    }
+    .partners {
+        padding: 30px;
+        margin: 0 30px 0 30px;
+    }
+    .search {
+        width: 65%;
+    }
+    .logoField a {
+        font-size: 16px;
+    }
+    .linksLogos {
+        justify-content: center;
+    }
+    .firstPage h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .sign button {
+        color: white;
+        padding: 5px 10px 5px 10px;
+    }
+    .firstPage p {
+        font-size: 10px;
+        text-align: center;
+    }
+    .inputItem {
+        margin: 50px auto;
+        width: 300px;
+    }
+    .about-hero {
+        padding: 25px 0 10px 25px;
+    }
+    .about-hero p {
+        font-size: 6px;
+        line-height: 10px;
+    }
+    .search input {
+        font-size: 10px;
+        padding: 10px 20px 10px 20px;
+    }
+    .tools p {
+        text-align: center;
+        font-size: 12px;
+    }
+    .explore {
+        margin: 15% auto;
+        width: 60%;
+    }
+    .tools h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+    .littleCards .littleCard {
+        margin-bottom: 10px;
+        padding: 20px;
+        width: 208px;
+    }
+    .lastPage .inputItem {
+        width: 270px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .sign button {
+        font-size: 10px;
+    }
+    .lastPage h1 {
+        font-size: 24px;
+    }
+    .lastPage p {
+        font-size: 12px;
+    }
+    footer {
+        gap: 25%;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 380px){
+    .heroSecond h1 {
+        font-size: 24px;
+    }
+    .heroSecond p {
+        font-size: 12px;
+    }
+    .tools h1 {
+        font-size: 26px;
+    }
+    .tools p {
+        font-size: 10px;
+    }
+    .explore {
+        width: 80%;
+    }
+    .cards {
+        gap: 2px;
+    }
+}
